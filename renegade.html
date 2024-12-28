@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gracie Paterson's Portfolio</title>
+    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+        <link href="styles.css" rel="stylesheet">
+    </head>
+<body>
+    <header>
+            <a href="index.html"><h1>GP</h1></a>
+    
+            <nav class="menu">
+                <img src="images/menu.png" alt="menu graphic" id="hamburger">
+                <ul class="hidden">
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="https://www.linkedin.com/in/gracepaterson88">LinkedIn</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <section id="singlepage" class="simple">
+        <h2>Renegade Craft Poster</h2>
+        <p id="date">November 2023</p>
+        <p id="tools">Tools: Adobe Illustrator</p>
+        
+        <p class="simple">For this assignment, we were tasked with creating a poster for an event that would take place in either 2023 or 2024. To prepare for this task, we were instructed to examine past posters and artwork related to the event, draw inspiration from them, and then produce a poster that improves upon the previous work. I chose to design a poster for the Renegade Craft, a craft fair that takes place in various locations throughout the United States. The previous posters for this event featured brightly colored illustrations and simple text, which I incorporated into my own design. However, I modified the text to make it more distinctive and noticeable within the overall layout.</p>
+        <img src="images/renegade.jpg" >
+    </section>
+
+    <footer>
+        <p>Want to get in touch?</p>
+        <address>
+            <a href="mailto:&#103;&#114;&#097;&#099;&#101;&#112;&#097;&#116;&#101;&#114;&#115;&#111;&#110;&#056;&#056;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Email</a>
+        </address>
+        <a href="https://www.linkedin.com/in/gracepaterson88">LinkedIn</a>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('.menu ul');
+
+        hamburger.addEventListener('click', function() {
+            if (menu.classList.contains('hidden')) {
+                menu.className = 'showing';
+            } else {
+                menu.className = 'hidden';
+            }
+
+        });
+    </script>
+    
+</body>
+</html>

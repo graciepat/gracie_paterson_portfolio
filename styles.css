@@ -1,0 +1,327 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color:rgba(76, 98, 121, 1);
+    height: 125px;
+}
+
+header h1 {
+    color: white;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display:grid;
+    place-content: center;
+    background-color: rgba(115, 163, 207, 1);
+}
+
+header a {
+    text-decoration: none;
+}
+
+.showing {
+    right: -10px;
+}
+
+#hamburger {
+    padding: 12px 0;
+}
+
+.menu {
+    margin: auto 0 auto 0;
+    padding-right: 10px;
+}
+
+.menu ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+}
+
+.menu  ul li a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 150%;
+    display: block;
+    background-color: rgb(232, 242, 255);
+    border-bottom: 2px solid rgba(76, 98, 121, 1);
+    padding: 10px 15px;
+    color: black;
+    width: 200px;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.hidden {
+    right: 5000px;
+}
+
+img {
+    border-radius: 20px;
+}
+
+.imagecontainer img {
+    transition: transform 0.1s ease-in-out;
+}
+
+.imagecontainer img:hover {
+    transform: scale(1.1);
+}
+
+#profilephoto {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#projects article img {
+    width:80%;
+    height: auto;
+    display: block;
+    margin: 30px auto 30px auto;
+}
+
+#projects h2,h3{
+    text-align: center;
+}
+
+.projectsectionheader {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#tophome {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+
+#projectsection {
+    background: rgba(91, 133, 178, 0.22);
+    padding-bottom: 40px;
+}
+
+#projects h2 {
+    font-size: 350%;
+    font-weight: 400;
+}
+
+#tophome h3 {
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+#ps {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#projects article {
+    padding-top: 20px;
+    border-bottom: 1px solid black;
+}
+
+#projectsection h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 200%;
+    margin-bottom: 0;
+}
+
+#projectsection p {
+    padding-bottom: 10px;
+}
+
+#projectsection h3 {
+    font-weight: 400;
+    font-size: 130%;
+}
+
+#applied {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#singlepage h2, h3, #date, #tools {
+    text-align: center;
+}
+
+#singlepage h2 {
+    font-weight: 600;
+    font-size: 250%;
+}
+
+#singlepage h3 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 150%;
+    text-transform: uppercase;
+}
+
+#singlepage h4 {
+    font-weight: 500;
+    font-size: 120%;
+}
+
+#singlepage p {
+    line-height: 1.75em;
+}
+
+#singlepage .simple {
+    padding-bottom: 20px;
+}
+
+#singlepage {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+#singlepage img {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+#singlepage #logo {
+    width: 20%;
+    height:auto;
+}
+
+#singlepage #competitive {
+    display:flex;
+    gap: 20px;
+}
+
+#aboutme {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutme img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 10px auto auto auto ;
+}
+
+#figma a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(115, 163, 207, 1);
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 120%;
+}
+
+#figma {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+footer {
+    display:flex;
+    height: 80px;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    background: rgba(76, 98, 121, 1); 
+    padding: 15px;
+    border-radius: 15px;
+    height: 20px;
+}
+
+footer address {
+    padding-top: 15px;
+}
+
+
+@media only screen and (min-width: 650px){
+    #tophome {
+        display: flex;
+        gap: 40px;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #profilephoto {
+        width: 40%;
+        margin: auto;
+    }
+
+    #applied { 
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows: repeat(auto);
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      #singlepage img {
+        width: 70%;
+        height:auto;
+    }
+
+    #singlepage #logo {
+        height: auto;
+        display: block;
+        margin: 0;
+    }
+
+    #singlepage {
+        padding-left: 15%;
+        padding-right: 15%
+    }
+
+    #aboutme img {
+        width: 50%;
+    }
+
+    #aboutme {
+        padding-left:15%;
+        padding-right:15%;
+    }
+
+}
+
+
+
+
+
+
+
+
+

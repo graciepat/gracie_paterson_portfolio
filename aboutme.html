@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracie Paterson's Portfolio</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+            <a href="index.html"><h1>GP</h1></a>
+    
+            <nav class="menu">
+                <img src="images/menu.png" alt="menu graphic" id="hamburger">
+                <ul class="hidden">
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="https://www.linkedin.com/in/gracepaterson88">LinkedIn</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <section id="aboutme">
+        <p>Hello!</p>
+        <p>I was born in the Bay Area and feel very grateful that I got to grow up surrounded by amazing food, art, culture, and people. I think where I’m from has a huge impact on the designer I am now and want to be in the future.</p>
+        <p>Since I was very little I found so much joy from being creative. I was always drawn to my school assignments that involved some form of art or aesthetic, and so when I found out I could major in and pursue a career in design, I knew I had found my calling. </p>
+        <p>Thanks for taking the time to learn a little about about me!</p>
+        <img src="images/ikea.jpg">
+        <p>Me in my favorite very large chair at Ikea</p>
+    </section>
+
+    <footer>
+        <p>Want to get in touch?</p>
+        <address>
+            <a href="mailto:&#103;&#114;&#097;&#099;&#101;&#112;&#097;&#116;&#101;&#114;&#115;&#111;&#110;&#056;&#056;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Email</a>
+        </address>
+        <a href="https://www.linkedin.com/in/gracepaterson88">LinkedIn</a>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('.menu ul');
+
+        hamburger.addEventListener('click', function() {
+            if (menu.classList.contains('hidden')) {
+                menu.className = 'showing';
+            } else {
+                menu.className = 'hidden';
+            }
+
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gracie Paterson's Portfolio</title>
+    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+        <link href="styles.css" rel="stylesheet">
+    </head>
+<body>
+    <header>
+            <a href="index.html"><h1>GP</h1></a>
+    
+            <nav class="menu">
+                <img src="images/menu.png" alt="menu graphic" id="hamburger">
+                <ul class="hidden">
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="https://www.linkedin.com/in/gracepaterson88">LinkedIn</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <section id="singlepage">
+        <h2>Community Pantry Mobile App</h2>
+        <p id="date">June 2024</p>
+        <p id="tools">Tools: Figma</p>
+        
+        <h3>The problem + My solution</h3>
+        <p>Millions struggle with hunger, lacking access to nutritious food. Yet, tons of perfectly good food goes to waste every day. How can a simple, community-based app bridge this gap and nourish our communities?</p>
+        <p>My solution is a community-based app that provides those in need with access to nutritional food through donations of food items, meals, and services by those in the community who are able to give. Users will be able to claim, donate, or both. The app will help to facilitate the exchange of donated goods.</p>
+        <img src="images/communitypantry.jpg">
+
+        <h3>Research</h3>
+        <h4>Competitive Analysis</h4>
+        <p>Meal Connect</p>
+        <p>Strengths:
+            <ul>
+                <li>Very organized system of donation and collection</li>
+                <li>Associated with big names like Google and Walmart, has a lot of press hyping up the app</li>
+            </ul>
+        </p>
+        <p>Weaknesses/Threats (things this app doesn’t have that mine does):</p>
+            <ul>
+                <li>Third-party collecting the donations takes away from connecting with the person you are helping</li>
+                <li>You can only donate ingredients, not meals or services</li>
+            </ul>
+        <p>Share The Meal</p>
+        <p>Strengths:
+            <ul>
+                <li>Associated with the United Nations World Food Programme</li>
+                <li>Supports people outside of a singular community - a wider scope</li>
+                <li>It may feel easier to donate money and have someone else use that to help someone rather than taking the time and effort to donate food or services</li>
+            </ul>
+        </p>
+        <p>Weaknesses/Threats (things this app doesn’t have that mine does):
+            <ul>
+                <li>However, also doesn’t have that personal connection created through in-person interactions and acknowledging the person you are helping</li>
+                <li>It can sometimes be hard to feel certain about donating to an organization if you don’t know for certain how your money will be used</li>
+            </ul>
+        </p>
+
+        <h4>Affinity Mapping</h4>
+        <img src="images/affinitymap.png" >
+
+        <h4>User Testing</h4>
+        <img src="images/usertesting1.png" >
+        <img src="images/usertesting2.png" >
+        <img src="images/usertesting3.png" >
+        <img src="images/usertesting4.png" >
+
+        <h3>The Final Design</h3>
+        <p id="figma"><a href="#">Community Pantry Mobile App Figma</a></p>
+        <img src="images/communitypantryfinal.png">
+    </section>
+
+    <footer>
+        <p>Want to get in touch?</p>
+        <address>
+            <a href="mailto:&#103;&#114;&#097;&#099;&#101;&#112;&#097;&#116;&#101;&#114;&#115;&#111;&#110;&#056;&#056;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Email</a>
+        </address>
+        <a href="https://www.linkedin.com/in/gracepaterson88">LinkedIn</a>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('.menu ul');
+
+        hamburger.addEventListener('click', function() {
+            if (menu.classList.contains('hidden')) {
+                menu.className = 'showing';
+            } else {
+                menu.className = 'hidden';
+            }
+
+        });
+    </script>
+    
+</body>
+</html>

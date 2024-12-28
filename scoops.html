@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gracie Paterson's Portfolio</title>
+    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+        <link href="styles.css" rel="stylesheet">
+    </head>
+<body>
+    <header>
+            <a href="index.html"><h1>GP</h1></a>
+    
+            <nav class="menu">
+                <img src="images/menu.png" alt="menu graphic" id="hamburger">
+                <ul class="hidden">
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="https://www.linkedin.com/in/gracepaterson88">LinkedIn</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <section id="singlepage">
+        <h2>Scoops News App</h2>
+        <p id="date">November 2024</p>
+        <p id="tools">Tools: Figma</p>
+        
+        <h3>The problem + Our solution</h3>
+        <p>“How might we develop a news app that is minimalistic and visually appealing that allows personalization for the user that still helps provide daily news?”</p>
+        <p>Our solution is a minimalistic news app that allows users to personalize what content is suggested for them, and provides unique features to improve their news consumption experience.  </p>
+        <img src="images/scoops.jpeg" > 
+        
+        <h3>Research</h3>
+        <h4>Survey - 20 responses</h4>
+            <img src="images/survey.png" >
+            <ul>
+                <li>Average age: 20 years</li>
+                <li>Most used news apps/websites: NYT, Apple News, Twitter, Instagram</li>
+                <li>Average use time: 4-5 times per week</li>
+            </ul>
+            <p>Why do you use a news app?</p>
+            <p>“I want to stay up to date with current events and whatever is going on in the world.”</p>
+            <p>What topics/types of news do you generally look/read about?</p>
+            <p>“Entertainment/Pop Culture, Foreign affairs, Politics, Science, Weather, Local News, Cooking …”</p>
+            <p>Do you prefer general news or specialized themes?</p>
+            <p>“It depends; I think having a mix is good.”</p>
+            <p>“There are certain topics that I prefer, like politics.”</p>
+            <p>What is a feature of the app that you couldn’t/could live without?</p>
+            <p>“I really like the Trending/Today News page that shows highlights and relevant news.”</p>
+            <p>“I could live without subscriptions and constant ads.”</p>
+
+        <h4>Competitive Analysis </h4> 
+            <div id="competitive">
+            <img id="logo" src="images/nyt.jpg" >
+            <div>
+            <p>New York times
+                <ul>
+                    <li>Too Many Features - Takes too many clicks; takes long to scroll to a category</li>
+                    <li>Cognitive overload; too much information - Especially for users without the upgrade</li>
+                </ul>
+            </p> 
+            </div>
+            </div>
+            <div id="competitive">
+            <img id="logo" src="images/apple.jpg" >
+            <div>
+            <p>Apple News
+                <ul>
+                    <li>Pop-up ads appear too often</li>
+                    <li>Cognitive overload especially on the “Today” page</li>
+                    <li>Too many options/features to choose from</li>
+                </ul>
+            </p>  
+            </div>
+            </div>
+            <div id="competitive">
+            <img id="logo" src="images/shades.jpg" >
+            <div>
+            <p>Shades News
+                <ul>
+                    <li>Audio/podcasts are only limited for the day of - Users may want to explore older podcasts</li>
+                    <li>Information is too summarized - Especially for users who want to still read an article</li>
+                </ul>
+            </p>
+            </div>
+            </div>
+        <h4>Personas</h4>
+        <img src="images/persona1.jpg" >
+        <img src="images/persona2.jpg" >
+        
+        <h3>Low-Fi Sketching and Mid-Fi Prototyping</h3>
+        <img src="images/lowfi.jpg" >
+        <img src="images/midfi.png" >
+    
+        <h3>The Final Design</h3>
+        <p id="figma"><a href="#">Scoops News App Figma</a></p>
+        <img src="images/scoopsfinal.png">
+    </section>
+
+    <footer>
+        <p>Want to get in touch?</p>
+        <address>
+            <a href="mailto:&#103;&#114;&#097;&#099;&#101;&#112;&#097;&#116;&#101;&#114;&#115;&#111;&#110;&#056;&#056;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Email</a>
+        </address>
+        <a href="https://www.linkedin.com/in/gracepaterson88">LinkedIn</a>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('.menu ul');
+
+        hamburger.addEventListener('click', function() {
+            if (menu.classList.contains('hidden')) {
+                menu.className = 'showing';
+            } else {
+                menu.className = 'hidden';
+            }
+
+        });
+    </script>
+    
+</body>
+</html>
