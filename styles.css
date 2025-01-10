@@ -130,6 +130,10 @@ img {
     padding-bottom: 20px;
 }
 
+#tophome p {
+    line-height: 1.3em;
+}
+
 #ps {
     text-align: center;
     padding-top: 15px;
@@ -138,6 +142,7 @@ img {
 #projects article {
     padding-top: 20px;
     border-bottom: 1px solid black;
+    text-align: center;
 }
 
 #projectsection h2 {
@@ -242,6 +247,58 @@ img {
     text-align: center;
     padding-bottom: 30px;
     padding-top: 10px;
+}
+
+.project-nav {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+  
+.project-nav ul {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    margin: 0; 
+    padding: 0; 
+}
+  
+.project-nav ul div {
+    display: flex;
+    align-items: center; 
+}
+
+.project-nav-pantry ul li{
+    text-align: center;
+    list-style: none;
+    padding-top: 5px;
+}
+
+.project-nav-pantry ul li a{
+    text-decoration: none;
+    color: black; 
+}
+
+.project-nav-pantry ul li:hover {
+    transform: scale(1.2);
+    font-weight: 400;
+}
+
+.project-nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.project-nav ul li {
+    list-style: none;
+}
+
+.project-nav ul li:hover {
+    transform: scale(1.2);
+    font-weight: 400;
 }
 
 footer {
